@@ -1,0 +1,36 @@
+<style>
+	.pozitionare
+	{
+		top:10px;
+		position:absolute;
+		
+	}
+
+	.cerc
+	{
+		height:100px;
+		width:100px;
+		
+		background-color:red;
+		border-radius:50%;
+	}
+</style>
+
+<script>
+	var n = 10;
+	var i;
+	
+	var razaCerc= 50;
+	var diametruCerc = razaCerc * 2;
+
+	var pozX = 50;
+		
+	i=0;
+	while( i < n )
+	{
+		document.write('<div class="pozitionare cerc" style="left:'+pozX+'px"></div>');
+
+		pozX = pozX + diametruCerc;
+		i = i + 1;
+	}
+</script>
